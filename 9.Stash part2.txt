@@ -1,0 +1,62 @@
+git stash save "(your message)" --> to make stash with message
+---
+ex:
+	E:\Training\git\git-course
+	--git stash save "js file"
+	Saved working directory and index state On main: js file
+--------------------------------------------------------------------------
+git stash show --> to show to latest stash
+---
+ex:
+	E:\Training\git\git-course
+	--git stash show
+	js/jQuery.js | 0
+	1 file changed, 0 insertions(+), 0 deletions(-)
+--------------------------------------------------------------------------
+git stash show (id of stash) --> to show the stash with id
+---
+ex:
+	E:\Training\git\git-course
+	--git stash list
+	stash@{0}: On main: js file
+	stash@{1}: On main: js file
+	--git stash show 1
+	js/lib.js | 0
+ 	1 file changed, 0 insertions(+), 0 deletions(-)
+--------------------------------------------------------------------------
+git stash apply --> it will pop the stash but without moving it
+---
+ex:
+	E:\Tarining\git\git-course
+	--git stash apply
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	Changes to be committed:
+  	(use "git restore --staged <file>..." to unstage)
+        	new file:   js/jQuery.js
+--------------------------------------------------------------------------
+git stash apply (id of the stash) --> it will pop the stash by id but without moving it
+---
+ex:
+	E:\Tarining\git\git-course
+	--git stash apply 0
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	Changes to be committed:
+  	(use "git restore --staged <file>..." to unstage)
+        	new file:   js/jQuery.js
+        	new file:   js/lib.js
+--------------------------------------------------------------------------
+git stash drop --> it will drop the stash
+---
+ex:
+	E:\Training\git\git-course
+	--git stash drop
+	Dropped refs/stash@{0} (209249f89adbe2d3bb8c83402af71329631728e5)
+--------------------------------------------------------------------------
+git stash drop (id of the stash) --> it will drop the stash by id
+------------------------------------------------------------------------------
+git stash clear -->it will clear all the stashes
+------------------------------------------------------------------------------

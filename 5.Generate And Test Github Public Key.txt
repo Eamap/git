@@ -1,0 +1,48 @@
+ssh-keygen -t rsa -b 4069 -C "your email" --> to make github public key
+---
+ex:
+	E:\Training\git\git-course
+	--ssh-keygen -t rsa -b 4069 -C "eslam.omar.elkhabery@gmail.com"
+	Generating public/private rsa key pair.
+	Enter file in which to save the key (C:\Users\eslam/.ssh/id_rsa):
+	Created directory 'C:\Users\eslam/.ssh'.
+	Enter passphrase (empty for no passphrase):
+	Enter same passphrase again:
+	Your identification has been saved in C:\Users\eslam/.ssh/id_rsa.
+	Your public key has been saved in C:\Users\eslam/.ssh/id_rsa.pub.
+	The key fingerprint is:
+	SHA256:3kNMNGQX7lRuERnkXx3rNpYL0I+mVVx53clvUXQgsJ8 eslam.omar.elkhabery@gmail.com
+	The key's randomart image is:
+	+---[RSA 4096]----+
+	|         .*.+oOB@|
+	|         o =.=o*X|
+	|          o.o.++*|
+	|         o +.o=.=|
+	|        S o E= O.|
+	|       . o  + + o|
+	|        . o.   . |
+	|           .     |
+	|                 |
+	+----[SHA256]-----+
+--------------------------------------------------------------------------------------------------------
+cat (your path)--> to show the content of your file
+---
+ex:
+	E:\Training\git\git-course
+	--cat ~/.ssh/id_rsa.pub
+	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAB/Ri8VzyeEZTArV6fTNRULtILw2kpaG1duA9TSY6p2qh293dTB5+GUJHAlbozTmM+82BHFRJSBSqc0y8SAN2T
+	cg2vwP2vMWCICXS8uBIeUnf2blMkFaP6Y8+KkcedQe2Kcy7e80nuqtr8CbeasYzYyG+hI+YaveYSyY8fM7h19KNZdntquTYUFdct1QtBd9fNl8CgqwxDm8d7j04p6h
+	tZ08wXfU6eIO7zT+7xSFQqbZtwEc32WsvsYqkX+CMl/qp+2MwYiJj/CpaHKdLxzXgxylZM0SxQo2JqFDrDh0P0atkVi8qHY2OZxvzqLxK6ftdpBvq0BU3l81Uam+by
+	ks5WAjnNvhdigWYvB/wh4wEgWr796XxxQo0y6d8N020AysvJq6qRpMkHcF9E1OkTz2mEiekWe3SSh1vD0H8HGWD8s77N7GEXOhQ4XgWEWUmNvg4rV2J5qmlR4kMlfw
+	VS3JjwqIqjsBm29wvm+Z/N6jaNRPo5n0qMs1Q8NIZ/C2qBu/6150VmfRglu3y8+fl/lSLkxrNZ9x70d7FE3MhmTaY1WazQ2C60u/7mUf6EW340AhMJvsVAg1Aatskv
+	YhHm9xTti95QG5L+SPxl78E16Pk1EVkUpasWr3XLHntYxrskbUv6gSgNq0Vr9CDlsTbcSDjM3TkAnbv/+OpDrRo/N84l eslam.omar.elkhabery@gmail.com
+--------------------------------------------------------------------------------------------------------
+ssh -T git@github.com --> to comfirm your public key
+---
+ex:
+	E:\Training\git\git-course
+	--ssh -T git@github.com
+	Warning: Permanently added the ECDSA host key for IP address '140.82.121.4' to the list of known hosts.
+	Enter passphrase for key 'C:\Users\eslam/.ssh/id_rsa':12345
+	Hi Eamap! You've successfully authenticated, but GitHub does not provide shell access.
+	

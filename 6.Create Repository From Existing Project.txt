@@ -1,0 +1,8 @@
+git init --> to make local repo on your pc
+---------------------------------------------
+git add (file doesnt exist) --> to make new file
+------------------------------------------------
+git add remote (name of remote) (link) --> to make remote repo
+----------------------------------------------------------------
+git push -u (remote repo) (beanch) --> to push and pull at the same time
+------------------------------------------------------------------------

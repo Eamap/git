@@ -1,0 +1,94 @@
+git clone (link from github) --> to make clone repo on your pc
+---
+ex:
+	E:\Training\git\git-course
+	--git clone https://github.com/Eamap/git-course.git
+	Cloning into 'git-course'...
+	remote: Enumerating objects: 3, done.
+	remote: Counting objects: 100% (3/3), done.
+	remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+	Receiving objects: 100% (3/3), done.
+----------------------------------------------------------------------------------------
+git config user.email "your email" --> to identify your email in git cmd
+---
+ex:
+	E:\Training\git\git-course
+	--git config user.email "eslam.omar.elkhabery@gmail.com"
+	E:\Workspace\Training\git\git-course
+
+git config user.name "your github name" --> to identify your name in git cmd
+---
+ex:
+	E:\Training\git\git-course
+	--git config user.name "EslamOmar"
+	E:\Training\git\git-course
+----------------------------------------------------------------------------------------
+git status --> to show the status of your git file on your pc
+---
+ex:
+	E:\Training\git\git-course
+	--git status
+	On branch main
+	Your branch is ahead of 'origin/main' by 1 commit.
+  	(use "git push" to publish your local commits)
+
+	nothing to commit, working tree clean
+	E:\Training\git\git-course
+ex:
+	E:\Training\git\git-course
+	--git status
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	Untracked files:
+  	(use "git add <file>..." to include in what will be committed)
+        css/
+        js/
+        main.html
+
+	nothing added to commit but untracked files present (use "git add" to track)
+----------------------------------------------------------------------------------------
+git add (file name or file destenation) --> to add the files to staging area
+---
+ex:
+	E:\Training\git\git-course
+	--git add main.html css\style.css js\main.js
+	E:\Training\git\git-course
+	--git status
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	Changes to be committed:
+  	(use "git restore --staged <file>..." to unstage)
+        new file:   css/style.css
+        new file:   js/main.js
+        new file:   main.html
+----------------------------------------------------------------------------------------
+git reset head (file name or file destenation) --> to revert the file and get it back from staging area
+---
+ex:
+	E:\Training\git\git-course
+	--git reset head main.html css\style.css
+	E:\Training\git\git-course
+	--git status
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	Changes to be committed:
+  	(use "git restore --staged <file>..." to unstage)
+        new file:   js/main.js
+
+	Untracked files:
+  	(use "git add <file>..." to include in what will be committed)
+        css/
+        main.html
+----------------------------------------------------------------------------------------
+git commit -m "your message" --> to commit your files to local repo
+---
+ex:
+	E:Training\git\git-course
+	--git commit -m "first change"
+	[main 68fb3ec] first change
+ 	1 file changed, 0 insertions(+), 0 deletions(-)
+ 	create mode 100644 js/main.js		
+	

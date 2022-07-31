@@ -1,0 +1,62 @@
+git branch --> to show the branch you are in
+---
+ex:
+	E:\Training\git\test\test-repo
+	--git branch
+	  main
+	* scroll
+	E:\Training\git\test\test-repo
+----------------------------------------------------
+git branch (name of branch) --> to make new branch
+---
+ex:
+	E:\Training\git\test\test-repo
+	--git branch ali
+	E:\Training\git\test\test-repo
+	--git branch
+	  ali
+	* eslam
+ 	 main
+----------------------------------------------------
+git branch -M (name of branch) --> to rename your branch
+---
+ex:
+	E:\Training\git\test\test-repo
+	--git branch -M eslam
+----------------------------------------------------
+git branch -d (name of branch) --> to delete the branch
+---
+ex:
+	E:\Training\git\test\test-repo
+	--git branch -d eslam
+	Deleted branch eslam (was f755f14).
+----------------------------------------------------
+git branch -D (name of branch) --> to delete the branch
+---
+ex:
+	E:\Training\git\test\test-repo
+	--git branch -d eslam
+	Deleted branch eslam (was f755f14).
+----------------------------------------------------
+git checkout (name of branch) --> to change the branch
+---
+ex:
+	E:\Training\git\test\test-repo
+	--git checkout eslam
+	Switched to branch 'eslam'
+----------------------------------------------------
+git checkout -b (name of branch) --> to make the branch ane go to it
+---
+ex:
+	E:\Training\git\test\test-repo
+	--git checkout -b ali
+	Switched to a new branch 'ali'
+----------------------------------------------------
+git merge (name of branch) --> to merge the branch with the branch you are in it
+ex:
+	E:\Training\git\test\test-repo
+	--git merge eslam
+	Updating 1a257fa..b63c435
+	Fast-forward
+ 	main.html | 1 +
+ 	1 file changed, 1 insertion(+)

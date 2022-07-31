@@ -1,0 +1,47 @@
+git log --> to git your commits
+---
+ex:
+	E:\Training\git\git-course
+	
+	--git log
+	
+	commit cefc5c70824209a3d65b4fcb5b319765fca2cf7f (HEAD -> main, origin/main)
+	Merge: 5370751 7fced59
+	Author: EslamOmar <42092902+Eamap@users.noreply.github.com>
+	Date:   Wed Jul 13 20:46:15 2022 +0200
+
+    	Merge pull request #1 from Dark-Semicolon/main
+
+    	mahmoud
+
+	commit 7fced59094cadb72c8a8752c4fec8acb18d4f80e
+	Author: Mahmoud Faisal <69069316+mahmoud-test@users.noreply.github.com>
+	Date:   Wed Jul 13 20:45:04 2022 +0200
+
+    	mahmoud
+
+	commit 53707519742433d20741616eff93fae51d701f4f
+	Author: EslamOmar <eslam.omar.elkhabery@gmail.com>
+	Date:   Wed Jul 13 20:41:50 2022 +0200
+
+    	a
+---------------------------------------------------------------------------------------------
+git reset --hard (the hash of the commit) --> to but the head on this commit and delete commits
+---
+ex:
+	E:\Training\git\git-course
+	
+	--git reset --hard 
+
+	HEAD is now at 7fced59 mahmoud
+----------------------------------------------------------------------------------------------
+git push (name of remote) (name of branch) --force --> to push the changes after u delete commits
+---
+ex:
+	E:\Training\git\git-course
+	
+	--git push origin main --force
+	
+	Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+	To github.com:Eamap/git-course.git
+ 	+ cefc5c7...7fced59 main -> main (forced update)

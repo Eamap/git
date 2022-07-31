@@ -1,0 +1,21 @@
+git branch --> to show the branch u work on it
+---
+ex:
+	E:\Training\git\git-course
+	--git branch
+	* main
+--------------------------------------------------------
+git remote -v --> to show your remote repo u work on it
+---
+ex:
+	E:\Training\git\git-course
+	--git remote -v
+	origin  https://github.com/Eamap/git-course.git (fetch)
+	origin  https://github.com/Eamap/git-course.git (push)
+--------------------------------------------------------
+git push (remote-repo) (branch) --> to push your changes on remote repo
+---
+ex:
+	E:\Training\git\git-course
+	--git push origin main
+	Everything up-to-date

@@ -1,0 +1,34 @@
+git tag --> to show your tags
+---
+ex:
+	E:\Training\git\git-course
+	
+	--git tag
+	
+	v1.0
+=====================================================
+git tag (name of the tag) --> to create tag
+---
+ex:
+	E:\Training\git\git-course
+	
+	--git tag v1.0
+=====================================================
+git push (name of remote) (name of tag) --> to push the tag to your remote repo
+---
+ex:
+	E:\Training\git\git-course
+	
+	--git push origin v1.0
+
+	Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+	To https://github.com/Eamap/test.git
+ 	* [new tag]         v1.0 -> v1.0
+=====================================================
+git tag -a (name of tag) -m (message u want) --> to make tag with message
+---
+ex:
+	E:\Training\git\git-course
+
+	--git tag -a v2.0 -m "Eslam omar"
+=====================================================

@@ -1,0 +1,50 @@
+git restore --staged (the path of the file u want) --> to restore file from staged area
+---
+ex:
+	E:\Training\git\git-course
+
+	--git status
+
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	Changes to be committed:
+  	 (use "git restore --staged <file>..." to unstage)
+        	new file:   css/lib.css
+       	 new file:   js/lib.js
+
+	--git restore --staged js/lib.js
+
+	E:\Training\git\git-course
+
+	--git status
+
+	Your branch is up to date with 'origin/main'.
+
+	Changes to be committed:
+  	 (use "git restore --staged <file>..." to unstage)
+        	new file:   css/lib.css
+
+	Untracked files:
+  	 (use "git add <file>..." to include in what will be committed)
+        	js/lib.js
+-------------------------------------------------------------------------------------------------------
+git clean -n --> to show the file u will clean(untracked files)
+---
+ex:
+	E:\Training\git\git-course
+	
+	--git clean -n
+	
+	Would remove js/lib.js
+-------------------------------------------------------------------------------------------------------
+git clean -f --> to clean untracked files
+---
+ex:
+	E:\Training\git\git-course
+	
+	--git clean -f
+	
+	Removing js/lib.js
+-------------------------------------------------------------------------------------------------------
+	

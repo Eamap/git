@@ -1,0 +1,98 @@
+git config --list --> to show all properties of configration
+---
+ex:
+	E:\Training\git\git-course
+	--git config --list
+	diff.astextplain.textconv=astextplain
+	filter.lfs.clean=git-lfs clean -- %f
+	filter.lfs.smudge=git-lfs smudge -- %f
+	filter.lfs.process=git-lfs filter-process
+	filter.lfs.required=true
+	http.sslbackend=openssl
+	http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+	core.autocrlf=true
+	core.fscache=true
+	core.symlinks=false
+	pull.rebase=false
+	credential.helper=manager-core
+	credential.https://dev.azure.com.usehttppath=true
+	init.defaultbranch=master
+	core.editor="C:\Users\eslam\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+	user.name=EslamOmar
+	core.repositoryformatversion=0
+	core.filemode=false
+	core.bare=false
+	core.logallrefupdates=true
+	core.symlinks=false
+	core.ignorecase=true
+	remote.origin.url=https://github.com/Eamap/git-course.git
+	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+	branch.main.remote=origin
+	branch.main.merge=refs/heads/main
+	user.email=eslam.omar.elkhabery@gmail.com
+	user.name=EslamOmar
+-----------------------------------------------------------------------------------------------
+git help config --> to open github config help menu
+---
+ex:
+	E:\Training\git\git-course
+	--git help config
+-----------------------------------------------------------------------------------------------
+git config --global --help --> to open config help menu
+---
+ex:
+	E:\Training\git\git-course
+	--git config --global --help
+	usage: git config [<options>]
+
+	Config file location
+    	--global              use global config file
+    	--system              use system config file
+    	--local               use repository config file
+    	--worktree            use per-worktree config file
+    	-f, --file <file>     use given config file
+    	--blob <blob-id>      read config from given blob object
+
+	Action
+    	--get                 get value: name [value-pattern]
+    	--get-all             get all values: key [value-pattern]
+    	--get-regexp          get values for regexp: name-regex [value-pattern]
+    	--get-urlmatch        get value specific for the URL: section[.var] URL
+    	--replace-all         replace all matching variables: name value [value-pattern]
+    	--add                 add a new variable: name value
+    	--unset               remove a variable: name [value-pattern]
+    	--unset-all           remove all matches: name [value-pattern]
+    	--rename-section      rename section: old-name new-name
+    	--remove-section      remove a section: name
+    	-l, --list            list all
+    	--fixed-value         use string equality when comparing values to 'value-pattern'
+    	-e, --edit            open an editor
+    	--get-color           find the color configured: slot [default]
+    	--get-colorbool       find the color setting: slot [stdout-is-tty]
+
+	Type
+    	-t, --type <type>     value is given this type
+    	--bool                value is "true" or "false"
+    	--int                 value is decimal number
+    	--bool-or-int         value is --bool or --int
+    	--bool-or-str         value is --bool or string
+    	--path                value is a path (file or directory name)
+    	--expiry-date         value is an expiry date
+
+	Other
+    	-z, --null            terminate values with NUL byte
+    	--name-only           show variable names only
+    	--includes            respect include directives on lookup
+    	--show-origin         show origin of config (file, standard input, blob, command line)
+    	--show-scope          show scope of config (worktree, local, global, system, command)
+    	--default <value>     with --get, use default value when missing entry
+-----------------------------------------------------------------------------------------------
+git config --global --edit --> to open editor to edit configration properties
+-----------------------------------------------------------------------------------------------
+git config --global --unset user.name --> to remove the name of the user
+---
+ex:
+	E:\Training\git\git-course
+	--git config --global --unset user.name
+	E:\\Training\git\git-course
+	

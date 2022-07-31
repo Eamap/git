@@ -1,0 +1,31 @@
+git pull (name of remote) --> to pull files and changes from remote repo
+---
+ex:
+	E:\Training\git\git-course
+	--git pull origin
+	remote: Enumerating objects: 5, done.
+	remote: Counting objects: 100% (5/5), done.
+	remote: Compressing objects: 100% (3/3), done.
+	remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+	Unpacking objects: 100% (3/3), 812 bytes | 1024 bytes/s, done.
+	From https://github.com/Eamap/git-course
+   	0f29d33..857b316  main       -> origin/main
+	Updating 0f29d33..857b316
+	Fast-forward
+ 	main.html | 15 +++++++++++++++
+----------------------------------------------------------------------------------------
+git pull (name of remote) (name of the branch) --> to pull files and changes from the branch you want
+---
+ex:
+	E:\Training\git\test
+	--git pull origin main
+	remote: Enumerating objects: 5, done.
+	remote: Counting objects: 100% (5/5), done.
+	remote: Compressing objects: 100% (3/3), done.
+	remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+	Unpacking objects: 100% (3/3), 812 bytes | 1024 bytes/s, done.
+	From https://github.com/Eamap/git-course
+   	0f29d33..857b316  main       -> origin/main
+	Updating 0f29d33..857b316
+	Fast-forward
+ 	main.html | 15 +++++++++++++++

@@ -1,0 +1,48 @@
+git stash --> to add your files to stash
+---
+ex:
+	E:\Training\git\git-course
+	--git status
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	Changes to be committed:
+  	(use "git restore --staged <file>..." to unstage)
+       	 new file:   css/lib.css
+        	 new file:   js/lib.js
+	E:\Training\git\git-course
+	--git stash
+	Saved working directory and index state WIP on main: 024c58e Merge pull request #3 from Eamap/eslam
+	E:\Training\git\git-course
+	--git status
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	nothing to commit, working tree clean
+--------------------------------------------------------------------------------------------------------------------
+git stash list --> to show your stash list
+---
+ex:
+	E:\Training\git\git-course
+	--git stash list
+	stash@{0}: WIP on main: 024c58e Merge pull request #3 from Eamap/eslam
+--------------------------------------------------------------------------------------------------------------------
+git stash pop --> to pop the in the stash
+---
+ex:
+	E:\Training\git\git-course
+	--git status
+	On branch main
+	Your branch is up to date with 'origin/main'.
+	E:\Training\git\git-course
+	--git stash pop
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	Changes to be committed:
+  	(use "git restore --staged <file>..." to unstage)
+        	new file:   css/lib.css
+        	new file:   js/lib.js
+
+	Dropped refs/stash@{0} (d5f9c734ecf4bed8218be91638d1fefc81f96456)
+--------------------------------------------------------------------------------------------------------------------
